@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>All-in-One Tools</title>
+  <title>PDF Tools</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>All-in-One Tools</h1>
-  <ul>
-    <li><a href="tools/word counter.html">Word Counter</a></li>
-    <li><a href="tools/char counter.html">Character Counter</a></li>
-    <li><a href="tools/case converter.html">Case Converter</a></li>
-    <li><a href="tools/convert png jpg.html">PNG to JPG Converter</a></li>
-    <li><a href="tools/bmi calculator.html">BMI Calculator</a></li>
-    <li><a href="tools/gst calculator.html">GST Calculator</a></li>
-    <li><a href="tools/emi calculator.html">EMI Calculator</a></li>
-    <li><a href="tools/image resize.html">Image Resize</a></li>
-    <li><a href="tools/image compress.html">Image Compress</a></li>
-    <li><a href="tools/age calculator.html">Age Calculator</a></li>
-    <li><a href="tools/image to pdf.html">Image to PDF</a></li>
-  </ul>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <h2>❤️ PDF Tools</h2>
+  <div id="sideMenu" class="side-menu">
+  <div class="close-btn" onclick="closeMenu()">x</div>
+
+
+<!-- FULL SCREEN SIDE MENU -->
+
+  <a href="merge-pdf.html">Merge PDF</a>
+  <a href="image-to-pdf.html">Image to PDF</a>
+  <a href="compress-pdf.html">Compress PDF</a>
+  <a href="pdf-to-word.html">PDF to Word</a>
+</div>
+</header>
+
+<section class="hero">
+  <h1>All PDF Tools in One Place</h1>
+  <p>Merge, split, compress and convert PDFs easily</p>
+</section>
+
+<div class="tool-card">
+  <a href="image-resize.html" class="tool-link">
+    <div class="icon orange">🖼️</div>
+    <div>
+      <h3>Image Resize</h3>
+      <p>Image ko resize kro</p>
+    </div>
+  </a>
+</div>
+
+<div class="tool-card">
+  <a href="split-pdf.html" class="tool-link">
+    <div class="icon orange">✂️</div>
+    <div>
+      <h3>Split PDF</h3>
+      <p>Split PDF pages easily</p>
+    </div>
+  </a>
+</div>
+
+<div class="tool-card">
+  <a href="image-to-pdf.html" class="tool-link">
+    <div class="icon red">📄</div>
+    <div>
+      <h3>Image to PDF</h3>
+      <p>Convert images to PDF</p>
+    </div>
+  </a>
+</div>
+  
+</section>
+
+<script src="script.js"></script>
+
+
 </body>
-</<html>
+  </html>
