@@ -1,55 +1,117 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  padding: 20px;
-  max-width: 600px;
-  margin: auto;
+  background: #f6f6f6;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #1a73e8;
+/* HEADER */
+.header {
+  background: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 1001;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
 }
 
-li {
-  margin: 10px 0;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  background: #1a73e8;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-a:hover {
-  background: #1558b0;
-}
-
-textarea, input {
+/* SIDE MENU */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  height: 100%;
+  background: white;
+  padding-top: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-button {
-  padding: 10px 20px;
-  background: #1a73e8;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.side-menu.open {
+  left: 0;       /* show menu */
 }
 
-button:hover {
-  background: #1558b0;
+.side-menu a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #eee;
+  width: 80%;
+  text-align: center;
 }
 
-p {
-  font-weight: bold;
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
 }
+
+.side-menu a:hover {
+  background: #f2f2f2;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.tool-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+/* Icon colors like iLovePDF */
+.icon.orange { background: #ff6b4a; color: white; }
+.icon.red { background: #ff4d4d; color: white; }
+.icon.green { background: #6bbf59; color: white; }
+.icon.blue { background: #4d7cff; color: white; }
+
+.tool-card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.tool-card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+    
